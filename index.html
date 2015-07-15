@@ -2,51 +2,123 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Christina Davies || Portfolio</title>
+		<title>Christina Davies || Front-End Developer</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Arvo|Raleway' rel='stylesheet' type='text/css'>
-		<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> -->
        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-       <link rel="icon" type="image/png" href="https://avatars0.githubusercontent.com/u/12640391?v=3&s=460" />
+       <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+       <script src="js/script.js"></script>
 	</head>
 <body>
-<nav class="top-navigation">
-<div class="content">
-<ul class="links">
-<li><a href="#aboutme">About Me</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul></div></nav>
-<header class="masthead">
-  <div class="intro"><h1 class="masthead-heading">Christina Davies</h1>
-  <p class="masthead-intro">Front-End Web Developer</p></div>
-</header>
-<div class="break"><a id="aboutme"><br><br></a></div>
-<a id="aboutme"><section class="about-me">
-<h2>About Me</h2></a>
-  <p>I'm a web developer in-training and English teacher based in Seoul, South Korea. I've lived here for 3 years and loved every minute of learning and growing in this beautiful country. I'm now working on entering the world of Front-End Web Development with help from my mentor and peers at <a href="http://www.thinkful.com">Thinkful</a>.
-
-<br><br>As I wrap up my last year of teaching, I'm looking forward to acquiring new skills in Web Development and pursuing a career which will nurture my love for technology and design.</p>
-</section>
-<a id="portfolio"><section class="portfolio">
+	<nav class="top-navigation">
+		<div class="content">
+			<ul class="links">
+				<li><a href="#aboutme">About Me</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li></a>
+			</ul>
+		</div>
+	</nav>
+	<header class="masthead">
+  		<div id="intro">
+  			<h1 class="masthead-heading">Christina Davies</h1>
+  			<p class="masthead-intro">Front-End Web Developer</p></div>
+	</header>
+	<a id="aboutme">
+	<br>
+	<br>
+	<br>
+	</a>
+	<section class="about-me">
+		<h2>About Me</h2>
+  			<p>
+  			<img class="profile" src="images/profile.jpg" width="261px" height="240px">
+  			I'm a junior web developer and English teacher based in Seoul, South Korea. I've lived here for 3 years and loved every minute of learning and growing in this beautiful country. As I wrap up my last year of teaching, I'm happy to be pursuing a career which will nurture my love for technology and design.
+			<br>
+			<br>
+			I completed <a href="http://www.thinkful.com" target="_blank">Thinkful's</a> Front-End Development course in July 2015, and I'm looking forward to entering the world of web development with newly acquired skills. Feel free to <a href="#contact">contact me</a> with any questions!</p>
+	</section>
+	<br>
+	<br>
+	<br>
+	<br>
+<a id="portfolio">
+<div id="portfolio">
 <h2>Portfolio</h2></a>
-<div class="projects"><h3>1. Hack the New York Times</h3>
-<p>This project required using Chrome Developer Tools and knowledge of HTML to alter the content of the New York Times' homepage.</p>
-<img src="images/hack-the-NYT.png" width="640px" height="356px"></div>
-<div class="projects"><h3>2. Karma Landing Page Clone</h3>
-<p>For this project, I designed and coded a static landing page with a wireframe and user experience defined by the small business Karma.</p>
-<a class="project-link" href="https://christinadavies.github.io/fewd_landing_page_clone/index.html" target="_blank"><img src="images/karma-landing-page-clone.png" width="640px" height="282px"></a></div>
-<div class="projects"><h3>3. Shopping List Application</h3>
-<p>This project allows users to input, check-off, and remove items from a shopping list. It focuses on use of jQuery to respond to user events.</p>
-<a class="project-link" href="https://christinadavies.github.io/shopping-list-app" target="_blank"><img src="images/shopping-list.png" width="640px" height="277px"></a></div>
-</section>
-<footer class="content-footer">
-  <a id="contact"><p>Get in touch with me!</p></a>
-  <br>
+<div class="project">
+	<h3>Hack the New York Times</h3>
+	<p>This project required using Chrome Developer Tools and knowledge of HTML to alter the content of the New York Times' homepage.</p>
+		<img src="images/hack-the-NYT.png" width="320px" height="142px">
+</div>
+<div class="project">
+	<h3>Karma Landing Page Clone</h3>
+	<p>For this project, I designed and coded a static landing page with a wireframe and user experience defined by the small business Karma.</p>
+		<a class="project-link" href="https://christinadavies.github.io/fewd_landing_page_clone/index.html" target="_blank"><img src="images/karma-landing-page-clone.png" width="320px" height="145px">
+		</a>
+</div>
+<div class="project">
+	<h3>Shopping List Application</h3>
+	<p>This project allows users to input, check-off, and remove items from a shopping list. It focuses on use of jQuery to respond to user events.</p>
+		<a class="project-link" href="https://christinadavies.github.io/shopping-list-app" target="_blank"><img src="images/shopping-list.png" width="320px" height="139px">
+		</a>
+</div>
+<div class="project">
+	<h3>Hot Or Cold</h3>
+	<p>This number guessing game focuses on the use of JavaScript functions to tell the user if they are "hot" or "cold" until they guess the number correctly.</p>
+		<a class="project-link" href="https://christinadavies.github.io/hot-or-cold" target="_blank">
+		<img src="images/hot-or-cold.png" width="320px" height="147px">
+		</a>
+</div>
+<div class="project">
+	<h3>Interactive Quiz</h3>
+	<p>This quiz uses JavaScript arrays and functions to lead the user through a series of questions about different foods from around the world.</p>
+		<a class="project-link" href="http://christinadavies.github.io/food-quiz" target="_blank">
+		<img src="images/interactive-quiz.png" width="320px" height="140px">
+		</a>
+</div>
+<div class="project">
+	<h3>API Hack</h3>
+	<p>This app uses AJAX and JSON APIs to display a stream of recently tagged photos from Instagram's servers.</p>
+		<a class="project-link" href="http://christinadavies.github.io/corgi-api" target="_blank">
+		<img src="images/corgi-api.png" width="320px" height="135px">
+		</a>
+</div>
+</div>
+<a id="contact"><footer class="content-footer"></a>
   <ul class="social">
-    <li class="facebook"><a class="footer" href="http://www.facebook.com/christina.cecilia" target="_blank"><i class="fa fa-facebook"></i></a></li>
-	<li class="google"><a class="footer" href="https://plus.google.com/u/0/111903182278961124172/posts" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>
-	<li class="instagram"><a class="footer" href="http://instagram.com/christinassi" target="_blank"><i class="fa fa-instagram"></i></a></li>
-	<li class="github"><a class="footer" href="http://github.com/christinadavies" target="_blank"><i class="fa fa-github-square"></i></a></li></ul>
-  <br><p>Cover Image via <a class="footer" href="https://www.flickr.com/photos/alexbarlow/" ="_blank">stuckinseoul</a> ©</p>
+    <li class="facebook">
+    	<a class="footer-link" href="http://www.facebook.com/christina.cecilia" target="_blank">
+    		<i class="fa fa-facebook"></i>
+    	</a>
+    </li>
+	<li class="google">
+		<a class="footer-link" href="https://plus.google.com/u/0/111903182278961124172/posts" target="_blank">
+			<i class="fa fa-google-plus"></i>
+		</a>
+	</li>
+	<li class="instagram">
+		<a class="footer-link" href="http://instagram.com/christinassi" target="_blank">
+			<i class="fa fa-instagram"></i>
+		</a>
+	</li>
+	<li class="github">
+		<a class="footer-link" href="http://github.com/christinadavies" target="_blank">
+			<i class="fa fa-github"></i>
+		</a>
+	</li>
+	<li class="linkedin">
+		<a class="footer-link" href="https://kr.linkedin.com/pub/christina-davies/31/963/398" target="_blank">
+			<i class="fa fa-linkedin"></i>
+		</a>
+	</li>
+	<li class="email">
+		<a class="footer-link" href="cc.goulet@gmail.com">
+			<i class="fa fa-envelope"></i>
+		</a>
+	</li>
+	</ul>
+  		<br>
+  		<p class="credit">Cover Image via <a class="footer-link" href="https://www.flickr.com/photos/alexbarlow/" ="_blank">stuckinseoul</a> ©</p>
+  		<br>
+  		<a class="top" href="#aboutme"><i class="fa fa-chevron-up"></i></a>
 </footer>

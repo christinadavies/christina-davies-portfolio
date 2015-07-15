@@ -1,3 +1,4 @@
+/* Normalize CSS */
 html {
   box-sizing: border-box;
 }
@@ -431,6 +432,10 @@ td,
 th {
   padding: 0;
 }
+
+/* end of Normalize CSS */
+
+/* for mobile devices */
 @media only screen and (max-width: 500px) {
   .masthead-heading {
     font-size: 3em;
@@ -442,6 +447,7 @@ th {
     padding: 3em 0;
   }
 }
+
 body {
   color: #38545B;
   font-size: 1em;
@@ -449,28 +455,36 @@ body {
   background-color: #86C8DB;
   -webkit-font-smoothing: antialiased;
 }
+
 .top-navigation {
   position: fixed;
   width: 100%;
   z-index: 9999;
   background-color: #86C8DB;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
+
 .top-navigation .links {
   margin-top: 26px;
   float: right;
   margin-right: 20px;
 }
+
 .top-navigation .links li {
   display: inline-block;
   margin-left: 1em;
 }
-.masthead-heading,
-.masthead-intro {
+
+.masthead-heading, .masthead-intro {
   text-align: left;
 }
+
 .content-footer {
     text-align: center;
 }
+
 .masthead {
   padding: 12em 0;
   background-image: url("stuckinseoul.png");
@@ -478,9 +492,12 @@ body {
   background-size: cover;
   background-position: center;
 }
-.intro {
+
+#intro {
   background-color: rgba(95, 142, 155, 0.5);
+  /*display: none;*/
 }
+
 .masthead-intro {
   padding-bottom: 0.2em;
   font-family: "Arvo", Georgia, serif;
@@ -488,6 +505,7 @@ body {
   font-weight: 300;
   margin-left: 0.2em;
 }
+
 .masthead-heading {
   margin-top: -0.2em;
   font-family: "Raleway", "Helvetica Neue", sans-serif;
@@ -497,44 +515,72 @@ body {
   color: #8ED4E8;
   margin-left: 0.1em;
 }
-.about-me,
-.portfolio {
-  max-width: 30em;
+
+.about-me, #portfolio {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
 }
-.about-me > p,
-.portfolio > p {
+
+.about-me {
+  max-width: 40em;
+}
+
+#portfolio {
+  text-align: center;
+  max-width: 78%;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+.about-me > p, #portfolio > p {
   font-weight: 300;
   letter-spacing: 0.05em;
 }
-.portfolio > .projects {
-  width: 700px;
-  padding: 30px;
-  margin-bottom: 30px;
-  background-color: #8ED4E8;
+
+.profile {
+  float: left;
+  border-radius: 100%;
+  margin: 20px;
+  vertical-align: baseline;
 }
-.projects > p {
+
+.project {
+  display: inline-block;
+  width: 400px;
+  height: 100%;
+  padding: 20px;
+  background-color: #8ED4E8;
+  margin: 20px;
+}
+
+.project > p {
   font-size: 0.9em;
 }
+
+.project-link:hover {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+h2 {
+  text-align: center;
+  color: #5F8E9B;
+}
+
 h3 {
   font-family: "Arvo", "Georgia", serif;
   font-size: 1.2em;
   font-weight: bold;
   color: #38545B;
 }
-.project-link:hover {
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-}
-h2 {
-  color: #5F8E9B;
-}
+
 .social > li {
   display: inline-block;
   width: 100px;
 }
+
 .content-footer {
   background-color: #5F8E9B;
   padding: 2em 0;
@@ -542,23 +588,34 @@ h2 {
   margin-right: auto;
   margin-top: 3em;
 }
-a,
-a:visited {
+
+a, a:visited {
   color: #38545B;
   text-decoration: none;
   font-family: "Arvo", "Georgia", serif;
 }
+
 a:hover {
-  color: white;
   text-decoration: none;
   color: #5F8E9B;
 }
-a > #portfolio,
-#aboutme,
-#contact {
+
+a > #portfolio, #aboutme, #contact {
   color: #38545B;
   font-family: "Raleway", "Helvetica Neue", sans-serif;
 }
-.footer:hover {
+
+.footer-link:hover, .top:hover {
   color: #8ED4E8;
+}
+
+.facebook, .google, .instagram, .github, .linkedin, .email {
+  font-size: 4em;
+}
+
+.top {
+  font-size: 2em;
+}
+.credit {
+  font-size: 0.8rem;
 }
